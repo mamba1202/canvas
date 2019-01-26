@@ -1,19 +1,43 @@
 <!DOCTYPE html>
 <html lang="zh-Hans">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <title>我的画板</title>
 </head>
+
 <body>
-   <canvas id="xxx" width: 300px; height: 300px;>
-       
-   </canvas>
-   <div id=actions class="actions">
-    <button id=eraser>橡皮擦</button>
-    <button id=brush>画笔</button>
-  </div>
-<script src="./main.js"></script>    
+    <canvas id="xxx" width: 300px; height: 300px;>
+
+    </canvas>
+    <div id=actions class="actions">
+        <svg id=pen class="active icon">
+            <use xlink:href="#icon-pen"></use>
+        </svg>
+        <svg id=eraser class="icon">
+            <use xlink:href="#icon-erase"></use>
+        </svg>
+        <svg id=clear class="icon">
+            <use xlink:href="#icon-clear"></use>
+        </svg>
+        <svg id=download class="icon">
+            <use xlink:href="#icon-save"></use>
+        </svg>
+
+    </div>
+    <ol class="colors">
+        <li id="red" class="red active"></li>
+        <li id="green" class="green"></li>
+        <li id="yellow" class="yellow"></li>
+    </ol>
+    <ol class="sizes">
+        <li id="thin" class="thin"></li>
+        <li id="thick" class="thick"></li>
+    </ol>
+    <script src="//at.alicdn.com/t/font_1033038_qtjth9s9vwf.js"></script>
+    <script src="./main.js"></script>
 </body>
+
 </html>
