@@ -12,16 +12,16 @@ ul,ol{
     left: 0;
   }
   
-  body{
+body{
     margin: 0px;
   }
-  .actions{
+.actions{
     position: fixed;
     top: 0;
     left: 0;
     padding: 20px;
   }
-  .icon {
+.icon {
     width: 1em; height: 1em;
     vertical-align: -0.15em;
     fill: currentColor;
