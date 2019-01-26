@@ -1,0 +1,12 @@
+body{
+    margin: 0px;
+}
+#xxx{
+    background:green;
+    display: block;
+}
+button{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
